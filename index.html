@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+</head>
+
+<body class="bg-body-tertiary">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow-lg rounded">
+                    <div class="card-header bg-primary mb-2">
+                        <span class="text-light fs-5">Login as admin</span>
+                    </div>
+                    <div class="card-body">
+                        <form action="./dash.html">
+                            <!-- Start User Name -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="userName" placeholder="Username" autofocus>
+                                <label for="userName">Username</label>
+                            </div>
+                            <!-- End userName -->
+
+                            <!-- Start Password -->
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <!-- End Password -->
+
+                            <!-- Start checkBox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">
+                                    Remember me
+                                </label>
+                            </div>
+                            <!-- Ens checkBox -->
+
+                            <!-- Start Submit -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success"><i
+                                        class="fa-solid fa-right-to-bracket"></i> Login as admin</button>
+                            </div>
+                            <!-- End Submit -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

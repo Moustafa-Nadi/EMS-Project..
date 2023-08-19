@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style-dash.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
+        <div class="container-fluid">
+            <!-- Start of Brand -->
+            <a class="navbar-brand brandGradient" href="dash.html">EMS2.0</a>
+            <!-- End of Brand -->
+
+            <!-- Start of Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- End of Toggler -->
+            <div class="collapse navbar-collapse small" id="navbarSupportedContent">
+                <!-- Start of Navbar Items -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="dash.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="employees.html">Employees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Jobs</a>
+                    </li>
+                </ul>
+                <!-- End of Navbar Items -->
+
+                <!-- Start Form -->
+                <form class="d-flex gap-3" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control form-control-sm"
+                            aria-label="Dollar amount (with dot and two decimal places)" placeholder="Search for... ">
+                        <button class="btn btn-success btn-sm rounded-end-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </div>
+                    <span class="vr text-white"></span>
+                    <a class="btn btn-warning btn-sm" href="login page.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                            class="bi bi-power" viewBox="0 0 16 16">
+                            <path d="M7.5 1v7h1V1h-1z" />
+                            <path
+                                d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
+                        </svg>
+                    </a>
+                </form>
+                <!-- End Form -->
+            </div>
+        </div>
+    </nav>
+    <!-- Start Section-2 -->
+    <div class="container-fluid mt-3">
+        <div class="row justify-content-center gap-3">
+            <!-- list group -->
+            <div class="col-md-2">
+                <div class="list-group mb-3 shadow small rounded-bottom-2">
+                    <a href="#" class="list-group-item list-group-item-action active text-capitalize">employee
+                        data</a>
+                    <a href="#" class="list-group-item list-group-item-action text-capitalize" data-bs-toggle="modal"
+                        data-bs-target="#addEmp">
+                        add employee</a>
+                </div>
+                <div class="list-group mb-3 shadow small">
+                    <a href="#" class="list-group-item list-group-item-action active text-capitalize">related links</a>
+                    <a href="jobs.html" class="list-group-item list-group-item-action text-capitalize">
+                        jobs list</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- Start Table -->
+                <table class="table caption-top table-bordered table-sm">
+                    <caption class="text-center text-capitalize text-bg-dark rounded-top">embloyees list
+                    </caption>
+                    <thead class="table-secondary small">
+                        <tr class="text-capitalize">
+                            <th scope="col">iD</th>
+                            <th scope="col">employee iD</th>
+                            <th scope="col">name</th>
+                            <th scope="col">email iD</th>
+                            <th scope="col">details</th>
+                            <th scope="col">edit</th>
+                            <th scope="col">delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>741</td>
+                            <td>John deo</td>
+                            <td>johndeo@gmail.com</td>
+                            <td>
+                                <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    class="btn btn-primary btn-sm d-block">Details</a>
+                            </td>
+                            <td><a href="#" class="btn btn-warning btn-sm d-block" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Edit</a></td>
+                            <td><a href="#" class="btn btn-danger btn-sm d-block" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>741</td>
+                            <td>John deo</td>
+                            <td>johndeo@gmail.com</td>
+                            <td><a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    class="btn btn-primary btn-sm d-block">Details</a></td>
+                            <td><a href="#" class="btn btn-warning btn-sm d-block" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Edit</a></td>
+                            <td><a href="#" class="btn btn-danger btn-sm d-block" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td>741</td>
+                            <td>John deo</td>
+                            <td>johndeo@gmail.com</td>
+                            <td><a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    class="btn btn-primary btn-sm d-block">Details</a></td>
+                            <td><a href="#" class="btn btn-warning btn-sm d-block" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Edit</a></td>
+                            <td><a href="#" class="btn btn-danger btn-sm d-block" class="btn btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Start Modal for Details -->
+            <div class="modal fade modal-lg" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-bg-dark">
+                            <h1 class="modal-title fs-5 text-capitalize" id="exampleModalToggleLabel">employee details
+                            </h1>
+                            <button type="button" class=" btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0 ">
+                            <table class="table table-sm">
+                                <tbody class="align-middle">
+                                    <tr class="border-top-0">
+                                        <th class="p-2 w-50 border-top-0">ID</th>
+                                        <td class="p-2 border-top-0 border-start">1</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">Employee ID</th>
+                                        <td class="p-2 border-start">7418</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">First Name</th>
+                                        <td class="p-2 border-start">John</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">Last Name</th>
+                                        <td class="p-2 border-start">Deo</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">Email ID</th>
+                                        <td class="p-2 border-start">JohnDeo@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">Phone Number</th>
+                                        <td class="p-2 border-start">01557169875</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">Job</th>
+                                        <td class="p-2 border-start">Graphic Designer</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-2">Joining Date</th>
+                                        <td class="p-2 border-start">22nd July, 2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer border-top-0 pt-0">
+                            <button class="btn btn-warning text-capitalize" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal">edit details</button>
+                            <button class="btn btn-primary text-capitalize" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-lg" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-capitalize text-bg-dark">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">employee details</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <input type="date" class="form-control mb-3" placeholder="24 Juli 2023">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="email" class="form-control" placeholder="Email ID">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <select class="form-select">
+                                    <option selected>Select job for employee</option>
+                                    <option value="1">Web Developer</option>
+                                    <option value="2">Mobile Developer</option>
+                                    <option value="3">Graphic Designer</option>
+                                </select>
+                                <div class="d-flex mt-3">
+                                    <button class="btn btn-success flex-fill me-3"
+                                        data-bs-target="#exampleModalToggle">Update Employee</button>
+                                    <button class="btn btn-warning" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Discard</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Modal for Details -->
+
+            <!-- Add Employee  -->
+            <div class="modal fade modal-lg" id="addEmp" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-capitalize text-bg-dark">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">add employee</h1>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <input type="date" class="form-control mb-3" placeholder="24 Juli 2023">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <input type="email" class="form-control" placeholder="Email ID">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <select class="form-select">
+                                    <option selected>Select job for employee</option>
+                                    <option value="1">Web Developer</option>
+                                    <option value="2">Mobile Developer</option>
+                                    <option value="3">Graphic Designer</option>
+                                </select>
+                                <div class="d-flex mt-3">
+                                    <button class="btn btn-success flex-fill me-3"
+                                        data-bs-target="#exampleModalToggle">Update
+                                        Employee</button>
+                                    <button class="btn btn-warning" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Discard</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Modal for Delete -->
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title fs-5 text-center" id="staticBackdropLabel">Do you want to delete
+                                <strong>"John
+                                    Deo"</strong>?</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-danger text-uppercase">yes</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-warning">Nope, Go back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal for Delete -->
+        </div>
+    </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
